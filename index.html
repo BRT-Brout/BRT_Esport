@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BRT Esport</title>
+  <link rel="icon" href="images/logo_seul.png" type="image/png">
+</head>
+<nav>
+  <ul style="list-style: none; display: flex; gap: 35px;">
+    <li><a href="Accueil.html">Accueil</a></li>
+	<li><a href="Jeux.html">Jeux</a></li>
+    <li><a href="Joueurs.html">Membres</a></li>
+	<li><a href="Clips.html">Clips</a></li>
+	<li><a href="Compétition.html">Compétition</a></li>
+    <li><a href="Recrutement_Contact.html">Recrutement/Contact</a></li>
+  </ul>
+</nav>
+<style>
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #1e1e1e;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 25px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #00bcd4;
+    }
+
+    /* Sous-menu */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #2b2b2b;
+      top: 100%;
+      left: 0;
+      min-width: 160px;
+      z-index: 1000;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 12px 16px;
+      font-size: 15px;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #0097a7;
+    }
+
+    nav ul li a::after {
+      content: "";
+      display: block;
+      margin: auto;
+      height: 2px;
+      width: 0%;
+      background: white;
+      transition: width 0.3s;
+    }
+
+    nav ul li a:hover::after {
+      width: 80%;
+    }
+body {
+  background-image: url("images/fond_blanc.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+</style>
+<body>
+<header style="
+  background-image: url('images/fond_anime3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+">
+  <img src="images/logo_seul.png" width="250" height="180" />
+  <h1 style="color: pink">The real Esport</h1>
+</header>
+
+  <div style="text-align: center;">
+
+	<h1 style="color: rgb(184, 55, 100); text-decoration: underline;line-height: 2;"><b>A la Une</b></h1>
+  </div>
+	<h3 style="position: absolute; top: 420px; left: 15px; font-size: 20px">Clip de <a href="Joueurs/Brout.html">Brout</a> sur <a href="Jeux/Rocket_League.html">Rocket League</A> en freeplay :</h3>
+	<video width="640" height="360" style="position: absolute; top: 480px; left: 10px;" controls>
+		<source src="vidéos/RL_clip.mp4" type="video/mp4">
+	</video>
+	<h3 style="position: absolute; top: 890px; left: 15px; font-size: 20px">Clip de <a href="Joueurs/Brout.html">Brout</a> sur <a href="Jeux/Rocket_League.html">Rocket League</A> en ranked Diamant 1 :</h3>
+	<video width="640" height="360" style="position: absolute; top: 950px; left: 10px;" controls>
+		<source src="vidéos/RL_clip1.mp4" type="video/mp4">
+	</video>
+	<h3 style="position: absolute; top: 1360px; left: 15px; font-size: 20px">Clip de <a href="Joueurs/Brout.html">Brout</a> sur <a href="Jeux/Rocket_League.html">Rocket League</A> en freeplay :</h3>
+	<video width="640" height="360" style="position: absolute; top: 1420px; left: 10px;" controls>
+		<source src="vidéos/RL_clip2.mp4" type="video/mp4">
+	</video>
+</body>
+</html>
